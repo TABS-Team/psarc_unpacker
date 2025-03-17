@@ -336,7 +336,7 @@ impl PsarcFile {
                 let output_path = output_dir.join(Path::new(path).file_name().unwrap());
                 let mut file = fs::File::create(&output_path)?;
                 file.write_all(&data)?;
-                tracing::trace!("Data dumped to {:?}", output_path);
+                tracing::info!("Data dumped to {:?}", output_path);
             }
         }
         Ok(())
