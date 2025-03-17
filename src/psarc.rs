@@ -3,6 +3,7 @@ use byteorder::{BigEndian, ReadBytesExt};
 use std::path::Path;
 use flate2::read::DeflateDecoder;
 use std::fs;
+use tracing;
 
 use crate::decryptor::DecryptStream;
 
@@ -318,8 +319,8 @@ impl PsarcFile {
         }
         self.toc.entries[0].path = Some("NamesBlock.bin".to_string());
         let asset: TextAsset = self.inflate_entry_as(&self.toc.entries[0])?;
-        println!("Manifest text ({} bytes):", asset.text.len());
-        println!("{}", asset.text);
+        tracing::trace!("Manifest text ({} bytes):", asset.text.len());
+        tracing::trace!("{}", asset.text);
         for (i, line) in asset.lines.iter().enumerate() {
             self.toc.entries[i + 1].path = Some(line.to_string());
         }
@@ -330,12 +331,12 @@ impl PsarcFile {
         fs::create_dir_all(output_dir)?;
         for entry in &self.toc.entries {
             if let Some(path) = &entry.path {
-                println!("Dumping entry: {}", path);
+                tracing::trace!("Dumping entry: {}", path);
                 let data = self.inflate_entry_data(entry)?;
                 let output_path = output_dir.join(Path::new(path).file_name().unwrap());
                 let mut file = fs::File::create(&output_path)?;
                 file.write_all(&data)?;
-                println!("Data dumped to {:?}", output_path);
+                tracing::trace!("Data dumped to {:?}", output_path);
             }
         }
         Ok(())
