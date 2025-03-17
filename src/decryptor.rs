@@ -30,21 +30,15 @@ impl DecryptStream {
     /// This function reads the encrypted data into memory, decrypts it using AES-256 CFB with a zero IV,
     /// and returns a DecryptStream that provides access to the decrypted data.
     pub fn new_psarc<R: Read + Seek>(mut input: R, length: usize) -> io::Result<Self> {
-        // Read the encrypted data into a buffer.
         let mut encrypted_data = vec![0u8; length];
         input.read_exact(&mut encrypted_data)?;
-        
-        // Create a GenericArray from the key and IV.
+
         let key = GenericArray::from_slice(&PSARC_KEY);
         let iv = GenericArray::from_slice(&PSARC_IV);
-        
-        // Create a new decryptor using AES-256 in CFB mode.
+
         let cipher = Decryptor::<Aes256>::new(key, iv);
-        
-        // Decrypt in place.
+
         cipher.decrypt(&mut encrypted_data);
-        
-        // Wrap the decrypted data in a Cursor.
         let reader = Cursor::new(encrypted_data);
         Ok(DecryptStream { reader })
     }
