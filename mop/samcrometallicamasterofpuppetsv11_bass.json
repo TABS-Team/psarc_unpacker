@@ -1,0 +1,2342 @@
+{
+  "Entries": {
+    "E067E5CDDDA947A28F91C0223CC25E68": {
+      "Attributes": {
+        "AlbumArt": "urn:image:dds:album_samcrometallicamasterofpuppetsv11",
+        "AlbumName": "Master Of Puppets",
+        "AlbumNameSort": "Master Of Puppets",
+        "ArrangementName": "Bass",
+        "ArrangementProperties": {
+          "represent": 1,
+          "bonusArr": 0,
+          "standardTuning": 1,
+          "nonStandardChords": 1,
+          "barreChords": 0,
+          "powerChords": 0,
+          "dropDPower": 0,
+          "openChords": 1,
+          "fingerPicking": 0,
+          "pickDirection": 0,
+          "doubleStops": 0,
+          "palmMutes": 0,
+          "harmonics": 0,
+          "pinchHarmonics": 0,
+          "hopo": 1,
+          "tremolo": 0,
+          "slides": 1,
+          "unpitchedSlides": 0,
+          "bends": 0,
+          "tapping": 0,
+          "vibrato": 0,
+          "fretHandMutes": 0,
+          "slapPop": 0,
+          "twoFingerPicking": 1,
+          "fifthsAndOctaves": 1,
+          "syncopation": 0,
+          "bassPick": 0,
+          "sustain": 1,
+          "pathLead": 0,
+          "pathRhythm": 0,
+          "pathBass": 1,
+          "routeMask": 4
+        },
+        "ArrangementSort": 0,
+        "ArrangementType": 3,
+        "ArtistName": "Metallica",
+        "ArtistNameSort": "Metallica",
+        "BlockAsset": "urn:emergent-world:samcrometallicamasterofpuppetsv11",
+        "CentOffset": 0,
+        "Chords": {},
+        "ChordTemplates": [],
+        "DLC": true,
+        "DLCKey": "SamcroMetallicaMasterOfPuppetsV11",
+        "DNA_Chords": 0,
+        "DNA_Riffs": 0,
+        "DNA_Solo": 0,
+        "DynamicVisualDensity": [
+          5,
+          4,
+          3.2,
+          2.5,
+          2,
+          1.6,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3,
+          1.3
+        ],
+        "EasyMastery": 0.459933222,
+        "FullName": "SamcroMetallicaMasterOfPuppetsV11_Bass",
+        "LastConversionDateTime": "09-17-22 16:42",
+        "LeaderboardChallengeRating": 0,
+        "ManifestUrn": "urn:database:json-db:samcrometallicamasterofpuppetsv11_bass",
+        "MasterID_PS3": -1,
+        "MasterID_RDV": 1500890330,
+        "MasterID_XBox360": -1,
+        "MaxPhraseDifficulty": 6,
+        "MediumMastery": 0.679465776,
+        "NotesEasy": 1102,
+        "NotesHard": 2396,
+        "NotesMedium": 1628,
+        "PersistentID": "E067E5CDDDA947A28F91C0223CC25E68",
+        "PhraseIterations": [
+          {
+            "PhraseIndex": 0,
+            "MaxDifficulty": 0,
+            "Name": "COUNT",
+            "StartTime": 0,
+            "EndTime": 4.241
+          },
+          {
+            "PhraseIndex": 2,
+            "MaxDifficulty": 2,
+            "Name": "p1",
+            "StartTime": 4.241,
+            "EndTime": 8.754
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 8.754,
+            "EndTime": 11.029
+          },
+          {
+            "PhraseIndex": 3,
+            "MaxDifficulty": 3,
+            "Name": "p2",
+            "StartTime": 11.029,
+            "EndTime": 20.118
+          },
+          {
+            "PhraseIndex": 4,
+            "MaxDifficulty": 4,
+            "Name": "p3",
+            "StartTime": 20.118,
+            "EndTime": 25.812
+          },
+          {
+            "PhraseIndex": 5,
+            "MaxDifficulty": 0,
+            "Name": "p4",
+            "StartTime": 25.812,
+            "EndTime": 26.95
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 26.95,
+            "EndTime": 29.225
+          },
+          {
+            "PhraseIndex": 6,
+            "MaxDifficulty": 4,
+            "Name": "p5",
+            "StartTime": 29.225,
+            "EndTime": 31.5
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 31.5,
+            "EndTime": 33.775
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 4,
+            "Name": "p6",
+            "StartTime": 33.775,
+            "EndTime": 34.913
+          },
+          {
+            "PhraseIndex": 8,
+            "MaxDifficulty": 4,
+            "Name": "p7",
+            "StartTime": 34.913,
+            "EndTime": 43.985
+          },
+          {
+            "PhraseIndex": 8,
+            "MaxDifficulty": 4,
+            "Name": "p7",
+            "StartTime": 43.985,
+            "EndTime": 53.152
+          },
+          {
+            "PhraseIndex": 9,
+            "MaxDifficulty": 4,
+            "Name": "p8",
+            "StartTime": 53.152,
+            "EndTime": 56.459
+          },
+          {
+            "PhraseIndex": 10,
+            "MaxDifficulty": 4,
+            "Name": "p9",
+            "StartTime": 56.459,
+            "EndTime": 64.908
+          },
+          {
+            "PhraseIndex": 11,
+            "MaxDifficulty": 4,
+            "Name": "p10",
+            "StartTime": 64.908,
+            "EndTime": 73.408
+          },
+          {
+            "PhraseIndex": 11,
+            "MaxDifficulty": 4,
+            "Name": "p10",
+            "StartTime": 73.408,
+            "EndTime": 81.909
+          },
+          {
+            "PhraseIndex": 12,
+            "MaxDifficulty": 4,
+            "Name": "p11",
+            "StartTime": 81.909,
+            "EndTime": 90.43
+          },
+          {
+            "PhraseIndex": 13,
+            "MaxDifficulty": 4,
+            "Name": "p12",
+            "StartTime": 90.43,
+            "EndTime": 91.576
+          },
+          {
+            "PhraseIndex": 14,
+            "MaxDifficulty": 4,
+            "Name": "p13",
+            "StartTime": 91.576,
+            "EndTime": 100.807
+          },
+          {
+            "PhraseIndex": 15,
+            "MaxDifficulty": 4,
+            "Name": "p14",
+            "StartTime": 100.807,
+            "EndTime": 110.068
+          },
+          {
+            "PhraseIndex": 16,
+            "MaxDifficulty": 1,
+            "Name": "p15",
+            "StartTime": 110.068,
+            "EndTime": 112.356
+          },
+          {
+            "PhraseIndex": 17,
+            "MaxDifficulty": 4,
+            "Name": "p16",
+            "StartTime": 112.356,
+            "EndTime": 120.287
+          },
+          {
+            "PhraseIndex": 18,
+            "MaxDifficulty": 5,
+            "Name": "p17",
+            "StartTime": 120.287,
+            "EndTime": 127.469
+          },
+          {
+            "PhraseIndex": 19,
+            "MaxDifficulty": 4,
+            "Name": "p18",
+            "StartTime": 127.469,
+            "EndTime": 134.935
+          },
+          {
+            "PhraseIndex": 8,
+            "MaxDifficulty": 4,
+            "Name": "p7",
+            "StartTime": 134.935,
+            "EndTime": 144.014
+          },
+          {
+            "PhraseIndex": 7,
+            "MaxDifficulty": 4,
+            "Name": "p6",
+            "StartTime": 144.014,
+            "EndTime": 145.127
+          },
+          {
+            "PhraseIndex": 20,
+            "MaxDifficulty": 4,
+            "Name": "p19",
+            "StartTime": 145.127,
+            "EndTime": 153.677
+          },
+          {
+            "PhraseIndex": 11,
+            "MaxDifficulty": 4,
+            "Name": "p10",
+            "StartTime": 153.677,
+            "EndTime": 162.236
+          },
+          {
+            "PhraseIndex": 12,
+            "MaxDifficulty": 4,
+            "Name": "p11",
+            "StartTime": 162.236,
+            "EndTime": 170.767
+          },
+          {
+            "PhraseIndex": 13,
+            "MaxDifficulty": 4,
+            "Name": "p12",
+            "StartTime": 170.767,
+            "EndTime": 171.925
+          },
+          {
+            "PhraseIndex": 14,
+            "MaxDifficulty": 4,
+            "Name": "p13",
+            "StartTime": 171.925,
+            "EndTime": 181.17
+          },
+          {
+            "PhraseIndex": 15,
+            "MaxDifficulty": 4,
+            "Name": "p14",
+            "StartTime": 181.17,
+            "EndTime": 190.483
+          },
+          {
+            "PhraseIndex": 16,
+            "MaxDifficulty": 1,
+            "Name": "p15",
+            "StartTime": 190.483,
+            "EndTime": 192.809
+          },
+          {
+            "PhraseIndex": 17,
+            "MaxDifficulty": 4,
+            "Name": "p16",
+            "StartTime": 192.809,
+            "EndTime": 200.793
+          },
+          {
+            "PhraseIndex": 18,
+            "MaxDifficulty": 5,
+            "Name": "p17",
+            "StartTime": 200.793,
+            "EndTime": 208.199
+          },
+          {
+            "PhraseIndex": 19,
+            "MaxDifficulty": 4,
+            "Name": "p18",
+            "StartTime": 208.199,
+            "EndTime": 215.867
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 215.867,
+            "EndTime": 218.567
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 218.567,
+            "EndTime": 227.83
+          },
+          {
+            "PhraseIndex": 21,
+            "MaxDifficulty": 1,
+            "Name": "p20",
+            "StartTime": 227.83,
+            "EndTime": 237.109
+          },
+          {
+            "PhraseIndex": 22,
+            "MaxDifficulty": 6,
+            "Name": "p21",
+            "StartTime": 237.109,
+            "EndTime": 255.665
+          },
+          {
+            "PhraseIndex": 23,
+            "MaxDifficulty": 6,
+            "Name": "p22",
+            "StartTime": 255.665,
+            "EndTime": 274.174
+          },
+          {
+            "PhraseIndex": 24,
+            "MaxDifficulty": 6,
+            "Name": "p23",
+            "StartTime": 274.174,
+            "EndTime": 292.82
+          },
+          {
+            "PhraseIndex": 25,
+            "MaxDifficulty": 4,
+            "Name": "p24",
+            "StartTime": 292.82,
+            "EndTime": 307.87
+          },
+          {
+            "PhraseIndex": 26,
+            "MaxDifficulty": 5,
+            "Name": "p25",
+            "StartTime": 307.87,
+            "EndTime": 315.983
+          },
+          {
+            "PhraseIndex": 27,
+            "MaxDifficulty": 5,
+            "Name": "p26",
+            "StartTime": 315.983,
+            "EndTime": 334.505
+          },
+          {
+            "PhraseIndex": 28,
+            "MaxDifficulty": 5,
+            "Name": "p27",
+            "StartTime": 334.505,
+            "EndTime": 348.194
+          },
+          {
+            "PhraseIndex": 29,
+            "MaxDifficulty": 4,
+            "Name": "p28",
+            "StartTime": 348.194,
+            "EndTime": 356.699
+          },
+          {
+            "PhraseIndex": 11,
+            "MaxDifficulty": 4,
+            "Name": "p10",
+            "StartTime": 356.699,
+            "EndTime": 365.245
+          },
+          {
+            "PhraseIndex": 12,
+            "MaxDifficulty": 4,
+            "Name": "p11",
+            "StartTime": 365.245,
+            "EndTime": 373.831
+          },
+          {
+            "PhraseIndex": 13,
+            "MaxDifficulty": 4,
+            "Name": "p12",
+            "StartTime": 373.831,
+            "EndTime": 374.981
+          },
+          {
+            "PhraseIndex": 30,
+            "MaxDifficulty": 4,
+            "Name": "p29",
+            "StartTime": 374.981,
+            "EndTime": 384.172
+          },
+          {
+            "PhraseIndex": 31,
+            "MaxDifficulty": 5,
+            "Name": "p30",
+            "StartTime": 384.172,
+            "EndTime": 385.252
+          },
+          {
+            "PhraseIndex": 32,
+            "MaxDifficulty": 5,
+            "Name": "p31",
+            "StartTime": 385.252,
+            "EndTime": 394.372
+          },
+          {
+            "PhraseIndex": 33,
+            "MaxDifficulty": 5,
+            "Name": "p32",
+            "StartTime": 394.372,
+            "EndTime": 403.423
+          },
+          {
+            "PhraseIndex": 34,
+            "MaxDifficulty": 4,
+            "Name": "p33",
+            "StartTime": 403.423,
+            "EndTime": 404.53
+          },
+          {
+            "PhraseIndex": 5,
+            "MaxDifficulty": 0,
+            "Name": "p4",
+            "StartTime": 404.53,
+            "EndTime": 405.655
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 405.655,
+            "EndTime": 407.905
+          },
+          {
+            "PhraseIndex": 6,
+            "MaxDifficulty": 4,
+            "Name": "p5",
+            "StartTime": 407.905,
+            "EndTime": 410.123
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 410.123,
+            "EndTime": 412.4
+          },
+          {
+            "PhraseIndex": 35,
+            "MaxDifficulty": 4,
+            "Name": "p34",
+            "StartTime": 412.4,
+            "EndTime": 414.644
+          },
+          {
+            "PhraseIndex": 29,
+            "MaxDifficulty": 4,
+            "Name": "p28",
+            "StartTime": 414.644,
+            "EndTime": 423.011
+          },
+          {
+            "PhraseIndex": 10,
+            "MaxDifficulty": 4,
+            "Name": "p9",
+            "StartTime": 423.011,
+            "EndTime": 431.476
+          },
+          {
+            "PhraseIndex": 12,
+            "MaxDifficulty": 4,
+            "Name": "p11",
+            "StartTime": 431.476,
+            "EndTime": 439.979
+          },
+          {
+            "PhraseIndex": 13,
+            "MaxDifficulty": 4,
+            "Name": "p12",
+            "StartTime": 439.979,
+            "EndTime": 441.155
+          },
+          {
+            "PhraseIndex": 14,
+            "MaxDifficulty": 4,
+            "Name": "p13",
+            "StartTime": 441.155,
+            "EndTime": 450.173
+          },
+          {
+            "PhraseIndex": 15,
+            "MaxDifficulty": 4,
+            "Name": "p14",
+            "StartTime": 450.173,
+            "EndTime": 459.324
+          },
+          {
+            "PhraseIndex": 16,
+            "MaxDifficulty": 1,
+            "Name": "p15",
+            "StartTime": 459.324,
+            "EndTime": 461.581
+          },
+          {
+            "PhraseIndex": 36,
+            "MaxDifficulty": 5,
+            "Name": "p35",
+            "StartTime": 461.581,
+            "EndTime": 469.478
+          },
+          {
+            "PhraseIndex": 37,
+            "MaxDifficulty": 5,
+            "Name": "p36",
+            "StartTime": 469.478,
+            "EndTime": 476.768
+          },
+          {
+            "PhraseIndex": 19,
+            "MaxDifficulty": 4,
+            "Name": "p18",
+            "StartTime": 476.768,
+            "EndTime": 484.166
+          },
+          {
+            "PhraseIndex": 38,
+            "MaxDifficulty": 4,
+            "Name": "p37",
+            "StartTime": 484.166,
+            "EndTime": 492.696
+          },
+          {
+            "PhraseIndex": 10,
+            "MaxDifficulty": 4,
+            "Name": "p9",
+            "StartTime": 492.696,
+            "EndTime": 501.177
+          },
+          {
+            "PhraseIndex": 39,
+            "MaxDifficulty": 4,
+            "Name": "p38",
+            "StartTime": 501.177,
+            "EndTime": 510.518
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 510.518,
+            "EndTime": 517.565
+          },
+          {
+            "PhraseIndex": 1,
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "StartTime": 517.565,
+            "EndTime": 518.74
+          },
+          {
+            "PhraseIndex": 40,
+            "MaxDifficulty": 0,
+            "Name": "END",
+            "StartTime": 518.74,
+            "EndTime": 521.408
+          }
+        ],
+        "Phrases": [
+          {
+            "MaxDifficulty": 0,
+            "Name": "COUNT",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "p0",
+            "IterationCount": 9
+          },
+          {
+            "MaxDifficulty": 2,
+            "Name": "p1",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 3,
+            "Name": "p2",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p3",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "p4",
+            "IterationCount": 2
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p5",
+            "IterationCount": 2
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p6",
+            "IterationCount": 2
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p7",
+            "IterationCount": 3
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p8",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p9",
+            "IterationCount": 3
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p10",
+            "IterationCount": 4
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p11",
+            "IterationCount": 4
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p12",
+            "IterationCount": 4
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p13",
+            "IterationCount": 3
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p14",
+            "IterationCount": 3
+          },
+          {
+            "MaxDifficulty": 1,
+            "Name": "p15",
+            "IterationCount": 3
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p16",
+            "IterationCount": 2
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p17",
+            "IterationCount": 2
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p18",
+            "IterationCount": 3
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p19",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 1,
+            "Name": "p20",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 6,
+            "Name": "p21",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 6,
+            "Name": "p22",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 6,
+            "Name": "p23",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p24",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p25",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p26",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p27",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p28",
+            "IterationCount": 2
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p29",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p30",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p31",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p32",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p33",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p34",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p35",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 5,
+            "Name": "p36",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p37",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 4,
+            "Name": "p38",
+            "IterationCount": 1
+          },
+          {
+            "MaxDifficulty": 0,
+            "Name": "END",
+            "IterationCount": 1
+          }
+        ],
+        "PreviewBankPath": "song_samcrometallicamasterofpuppetsv11_preview.bnk",
+        "RelativeDifficulty": 0,
+        "Score_MaxNotes": 2396,
+        "Score_PNV": 41.73623,
+        "Sections": [
+          {
+            "Name": "intro",
+            "UIName": "$[34286] Intro [1]",
+            "Number": 1,
+            "StartTime": 4.241,
+            "EndTime": 25.812,
+            "StartPhraseIterationIndex": 1,
+            "EndPhraseIterationIndex": 4,
+            "IsSolo": false
+          },
+          {
+            "Name": "intro",
+            "UIName": "$[34286] Intro [1]",
+            "Number": 2,
+            "StartTime": 25.812,
+            "EndTime": 34.913,
+            "StartPhraseIterationIndex": 5,
+            "EndPhraseIterationIndex": 9,
+            "IsSolo": false
+          },
+          {
+            "Name": "intro",
+            "UIName": "$[34286] Intro [1]",
+            "Number": 3,
+            "StartTime": 34.913,
+            "EndTime": 56.459,
+            "StartPhraseIterationIndex": 10,
+            "EndPhraseIterationIndex": 12,
+            "IsSolo": false
+          },
+          {
+            "Name": "preverse",
+            "UIName": "$[34297] Pre Verse [1]",
+            "Number": 1,
+            "StartTime": 56.459,
+            "EndTime": 64.908,
+            "StartPhraseIterationIndex": 13,
+            "EndPhraseIterationIndex": 13,
+            "IsSolo": false
+          },
+          {
+            "Name": "verse",
+            "UIName": "$[34304] Verse [1]",
+            "Number": 1,
+            "StartTime": 64.908,
+            "EndTime": 81.909,
+            "StartPhraseIterationIndex": 14,
+            "EndPhraseIterationIndex": 15,
+            "IsSolo": false
+          },
+          {
+            "Name": "prechorus",
+            "UIName": "$[34296] Pre Chorus [1]",
+            "Number": 1,
+            "StartTime": 81.909,
+            "EndTime": 91.576,
+            "StartPhraseIterationIndex": 16,
+            "EndPhraseIterationIndex": 17,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 1,
+            "StartTime": 91.576,
+            "EndTime": 112.356,
+            "StartPhraseIterationIndex": 18,
+            "EndPhraseIterationIndex": 20,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 2,
+            "StartTime": 112.356,
+            "EndTime": 134.935,
+            "StartPhraseIterationIndex": 21,
+            "EndPhraseIterationIndex": 23,
+            "IsSolo": false
+          },
+          {
+            "Name": "intro",
+            "UIName": "$[34286] Intro [1]",
+            "Number": 4,
+            "StartTime": 134.935,
+            "EndTime": 145.127,
+            "StartPhraseIterationIndex": 24,
+            "EndPhraseIterationIndex": 25,
+            "IsSolo": false
+          },
+          {
+            "Name": "verse",
+            "UIName": "$[34304] Verse [1]",
+            "Number": 2,
+            "StartTime": 145.127,
+            "EndTime": 162.236,
+            "StartPhraseIterationIndex": 26,
+            "EndPhraseIterationIndex": 27,
+            "IsSolo": false
+          },
+          {
+            "Name": "prechorus",
+            "UIName": "$[34296] Pre Chorus [1]",
+            "Number": 2,
+            "StartTime": 162.236,
+            "EndTime": 171.925,
+            "StartPhraseIterationIndex": 28,
+            "EndPhraseIterationIndex": 29,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 3,
+            "StartTime": 171.925,
+            "EndTime": 192.809,
+            "StartPhraseIterationIndex": 30,
+            "EndPhraseIterationIndex": 32,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 4,
+            "StartTime": 192.809,
+            "EndTime": 218.567,
+            "StartPhraseIterationIndex": 33,
+            "EndPhraseIterationIndex": 36,
+            "IsSolo": false
+          },
+          {
+            "Name": "interlude",
+            "UIName": "$[34285] Interlude [1]",
+            "Number": 1,
+            "StartTime": 218.567,
+            "EndTime": 237.109,
+            "StartPhraseIterationIndex": 37,
+            "EndPhraseIterationIndex": 38,
+            "IsSolo": false
+          },
+          {
+            "Name": "solo",
+            "UIName": "$[34300] Solo [1]",
+            "Number": 1,
+            "StartTime": 237.109,
+            "EndTime": 255.665,
+            "StartPhraseIterationIndex": 39,
+            "EndPhraseIterationIndex": 39,
+            "IsSolo": true
+          },
+          {
+            "Name": "solo",
+            "UIName": "$[34300] Solo [1]",
+            "Number": 2,
+            "StartTime": 255.665,
+            "EndTime": 274.174,
+            "StartPhraseIterationIndex": 40,
+            "EndPhraseIterationIndex": 40,
+            "IsSolo": true
+          },
+          {
+            "Name": "solo",
+            "UIName": "$[34300] Solo [1]",
+            "Number": 3,
+            "StartTime": 274.174,
+            "EndTime": 292.82,
+            "StartPhraseIterationIndex": 41,
+            "EndPhraseIterationIndex": 41,
+            "IsSolo": true
+          },
+          {
+            "Name": "prebrdg",
+            "UIName": "$[34295] Pre Bridge [1]",
+            "Number": 1,
+            "StartTime": 292.82,
+            "EndTime": 315.983,
+            "StartPhraseIterationIndex": 42,
+            "EndPhraseIterationIndex": 43,
+            "IsSolo": false
+          },
+          {
+            "Name": "bridge",
+            "UIName": "$[34282] Bridge [1]",
+            "Number": 1,
+            "StartTime": 315.983,
+            "EndTime": 348.194,
+            "StartPhraseIterationIndex": 44,
+            "EndPhraseIterationIndex": 45,
+            "IsSolo": false
+          },
+          {
+            "Name": "solo",
+            "UIName": "$[34300] Solo [1]",
+            "Number": 4,
+            "StartTime": 348.194,
+            "EndTime": 356.699,
+            "StartPhraseIterationIndex": 46,
+            "EndPhraseIterationIndex": 46,
+            "IsSolo": true
+          },
+          {
+            "Name": "solo",
+            "UIName": "$[34300] Solo [1]",
+            "Number": 5,
+            "StartTime": 356.699,
+            "EndTime": 365.245,
+            "StartPhraseIterationIndex": 47,
+            "EndPhraseIterationIndex": 47,
+            "IsSolo": true
+          },
+          {
+            "Name": "solo",
+            "UIName": "$[34300] Solo [1]",
+            "Number": 6,
+            "StartTime": 365.245,
+            "EndTime": 374.981,
+            "StartPhraseIterationIndex": 48,
+            "EndPhraseIterationIndex": 49,
+            "IsSolo": true
+          },
+          {
+            "Name": "bridge",
+            "UIName": "$[34282] Bridge [1]",
+            "Number": 2,
+            "StartTime": 374.981,
+            "EndTime": 385.252,
+            "StartPhraseIterationIndex": 50,
+            "EndPhraseIterationIndex": 51,
+            "IsSolo": false
+          },
+          {
+            "Name": "bridge",
+            "UIName": "$[34282] Bridge [1]",
+            "Number": 3,
+            "StartTime": 385.252,
+            "EndTime": 404.53,
+            "StartPhraseIterationIndex": 52,
+            "EndPhraseIterationIndex": 54,
+            "IsSolo": false
+          },
+          {
+            "Name": "intro",
+            "UIName": "$[34286] Intro [1]",
+            "Number": 5,
+            "StartTime": 404.53,
+            "EndTime": 414.644,
+            "StartPhraseIterationIndex": 55,
+            "EndPhraseIterationIndex": 59,
+            "IsSolo": false
+          },
+          {
+            "Name": "verse",
+            "UIName": "$[34304] Verse [1]",
+            "Number": 3,
+            "StartTime": 414.644,
+            "EndTime": 431.476,
+            "StartPhraseIterationIndex": 60,
+            "EndPhraseIterationIndex": 61,
+            "IsSolo": false
+          },
+          {
+            "Name": "prechorus",
+            "UIName": "$[34296] Pre Chorus [1]",
+            "Number": 3,
+            "StartTime": 431.476,
+            "EndTime": 441.155,
+            "StartPhraseIterationIndex": 62,
+            "EndPhraseIterationIndex": 63,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 5,
+            "StartTime": 441.155,
+            "EndTime": 461.581,
+            "StartPhraseIterationIndex": 64,
+            "EndPhraseIterationIndex": 66,
+            "IsSolo": false
+          },
+          {
+            "Name": "chorus",
+            "UIName": "$[34279] Chorus [1]",
+            "Number": 6,
+            "StartTime": 461.581,
+            "EndTime": 484.166,
+            "StartPhraseIterationIndex": 67,
+            "EndPhraseIterationIndex": 69,
+            "IsSolo": false
+          },
+          {
+            "Name": "outro",
+            "UIName": "$[34291] Outro [1]",
+            "Number": 1,
+            "StartTime": 484.166,
+            "EndTime": 518.74,
+            "StartPhraseIterationIndex": 70,
+            "EndPhraseIterationIndex": 74,
+            "IsSolo": false
+          },
+          {
+            "Name": "noguitar",
+            "UIName": "$[6091] No Guitar [1]",
+            "Number": 1,
+            "StartTime": 518.74,
+            "EndTime": 521.408,
+            "StartPhraseIterationIndex": 75,
+            "EndPhraseIterationIndex": 75,
+            "IsSolo": false
+          }
+        ],
+        "Shipping": true,
+        "ShowlightsXML": "urn:application:xml:samcrometallicamasterofpuppetsv11_showlights",
+        "SKU": "RS2",
+        "SongAsset": "urn:application:musicgame-song:samcrometallicamasterofpuppetsv11_bass",
+        "SongAverageTempo": 213,
+        "SongBank": "song_samcrometallicamasterofpuppetsv11.bnk",
+        "SongDiffEasy": 0.929943502,
+        "SongDiffHard": 0.505477457,
+        "SongDifficulty": 0.505477457,
+        "SongDiffMed": 0.686909265,
+        "SongEvent": "Play_SamcroMetallicaMasterOfPuppetsV11",
+        "SongKey": "SamcroMetallicaMasterOfPuppetsV11",
+        "SongLength": 521.408,
+        "SongName": "Master Of Puppets",
+        "SongNameSort": "Master Of Puppets",
+        "SongOffset": -0.917,
+        "SongPartition": 1,
+        "SongXml": "urn:application:xml:samcrometallicamasterofpuppetsv11_bass",
+        "SongYear": 1986,
+        "TargetScore": 100000,
+        "Techniques": {
+          "0": {
+            "12": [
+              13
+            ],
+            "17": [
+              13
+            ],
+            "18": [
+              13
+            ],
+            "19": [
+              13
+            ],
+            "20": [
+              13
+            ],
+            "21": [
+              13
+            ],
+            "22": [
+              13
+            ],
+            "23": [
+              13
+            ],
+            "25": [
+              13
+            ],
+            "29": [
+              13
+            ],
+            "30": [
+              13
+            ],
+            "31": [
+              13
+            ],
+            "32": [
+              13
+            ],
+            "33": [
+              13
+            ],
+            "34": [
+              13
+            ],
+            "35": [
+              13
+            ],
+            "37": [
+              13
+            ],
+            "38": [
+              13
+            ],
+            "45": [
+              13
+            ],
+            "53": [
+              13
+            ],
+            "60": [
+              13
+            ],
+            "63": [
+              13
+            ],
+            "64": [
+              13
+            ],
+            "65": [
+              13
+            ],
+            "66": [
+              13
+            ],
+            "67": [
+              13
+            ],
+            "68": [
+              13
+            ],
+            "69": [
+              13
+            ],
+            "70": [
+              13
+            ],
+            "72": [
+              13
+            ]
+          },
+          "1": {
+            "1": [
+              13
+            ],
+            "3": [
+              13
+            ],
+            "4": [
+              13
+            ],
+            "7": [
+              6,
+              9
+            ],
+            "9": [
+              6,
+              9
+            ],
+            "10": [
+              6,
+              9
+            ],
+            "11": [
+              6,
+              9
+            ],
+            "12": [
+              6,
+              9,
+              13
+            ],
+            "13": [
+              11,
+              13
+            ],
+            "14": [
+              11,
+              13
+            ],
+            "15": [
+              11,
+              13
+            ],
+            "16": [
+              11,
+              13
+            ],
+            "17": [
+              13
+            ],
+            "18": [
+              11,
+              13
+            ],
+            "19": [
+              11,
+              13
+            ],
+            "20": [
+              13
+            ],
+            "21": [
+              13
+            ],
+            "22": [
+              13
+            ],
+            "23": [
+              13
+            ],
+            "24": [
+              6,
+              9
+            ],
+            "25": [
+              6,
+              9,
+              13
+            ],
+            "26": [
+              11,
+              13
+            ],
+            "27": [
+              11,
+              13
+            ],
+            "28": [
+              11,
+              13
+            ],
+            "29": [
+              13
+            ],
+            "30": [
+              11,
+              13
+            ],
+            "31": [
+              11,
+              13
+            ],
+            "32": [
+              13
+            ],
+            "33": [
+              13
+            ],
+            "34": [
+              13
+            ],
+            "35": [
+              13
+            ],
+            "37": [
+              13
+            ],
+            "38": [
+              13
+            ],
+            "39": [
+              13
+            ],
+            "40": [
+              13
+            ],
+            "41": [
+              13
+            ],
+            "45": [
+              13
+            ],
+            "46": [
+              11,
+              13
+            ],
+            "47": [
+              11,
+              13
+            ],
+            "48": [
+              11,
+              13
+            ],
+            "53": [
+              13
+            ],
+            "57": [
+              6,
+              9
+            ],
+            "59": [
+              6,
+              9
+            ],
+            "60": [
+              11,
+              13
+            ],
+            "61": [
+              11,
+              13
+            ],
+            "62": [
+              11,
+              13
+            ],
+            "63": [
+              13
+            ],
+            "64": [
+              11,
+              13
+            ],
+            "65": [
+              11,
+              13
+            ],
+            "66": [
+              13
+            ],
+            "67": [
+              13
+            ],
+            "68": [
+              13
+            ],
+            "69": [
+              13
+            ],
+            "70": [
+              11,
+              13
+            ],
+            "71": [
+              11,
+              13
+            ],
+            "72": [
+              6,
+              9,
+              13
+            ]
+          },
+          "2": {
+            "1": [
+              13
+            ],
+            "3": [
+              13
+            ],
+            "4": [
+              13
+            ],
+            "7": [
+              6,
+              9
+            ],
+            "9": [
+              6,
+              9
+            ],
+            "10": [
+              6,
+              9
+            ],
+            "11": [
+              6,
+              9
+            ],
+            "12": [
+              6,
+              9,
+              13
+            ],
+            "13": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "14": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "15": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "16": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "17": [
+              13
+            ],
+            "18": [
+              11,
+              13
+            ],
+            "19": [
+              11,
+              13
+            ],
+            "20": [
+              13
+            ],
+            "21": [
+              13
+            ],
+            "22": [
+              13
+            ],
+            "23": [
+              13
+            ],
+            "24": [
+              6,
+              9
+            ],
+            "25": [
+              6,
+              9,
+              13
+            ],
+            "26": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "27": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "28": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "29": [
+              13
+            ],
+            "30": [
+              11,
+              13
+            ],
+            "31": [
+              11,
+              13
+            ],
+            "32": [
+              13
+            ],
+            "33": [
+              13
+            ],
+            "34": [
+              13
+            ],
+            "35": [
+              13
+            ],
+            "39": [
+              13
+            ],
+            "40": [
+              11,
+              13
+            ],
+            "41": [
+              13
+            ],
+            "45": [
+              13
+            ],
+            "46": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "47": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "48": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "52": [
+              13
+            ],
+            "53": [
+              13
+            ],
+            "57": [
+              6,
+              9
+            ],
+            "59": [
+              6,
+              9
+            ],
+            "60": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "61": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "62": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "63": [
+              13
+            ],
+            "64": [
+              11,
+              13
+            ],
+            "65": [
+              11,
+              13
+            ],
+            "66": [
+              13
+            ],
+            "67": [
+              13
+            ],
+            "68": [
+              13
+            ],
+            "69": [
+              13
+            ],
+            "70": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "71": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "72": [
+              6,
+              9,
+              13
+            ]
+          },
+          "3": {
+            "3": [
+              13
+            ],
+            "4": [
+              13
+            ],
+            "7": [
+              6,
+              9
+            ],
+            "9": [
+              6,
+              9
+            ],
+            "10": [
+              6,
+              9,
+              13
+            ],
+            "11": [
+              6,
+              9,
+              13
+            ],
+            "12": [
+              6,
+              9,
+              11,
+              13
+            ],
+            "13": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "14": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "15": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "16": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "17": [
+              13
+            ],
+            "18": [
+              11,
+              13
+            ],
+            "19": [
+              11,
+              13
+            ],
+            "20": [
+              13
+            ],
+            "21": [
+              13
+            ],
+            "22": [
+              13
+            ],
+            "23": [
+              13
+            ],
+            "24": [
+              6,
+              9,
+              13
+            ],
+            "25": [
+              6,
+              9,
+              13
+            ],
+            "26": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "27": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "28": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "29": [
+              13
+            ],
+            "30": [
+              11,
+              13
+            ],
+            "31": [
+              11,
+              13
+            ],
+            "32": [
+              13
+            ],
+            "33": [
+              13
+            ],
+            "34": [
+              13
+            ],
+            "35": [
+              13
+            ],
+            "39": [
+              13
+            ],
+            "40": [
+              11,
+              13
+            ],
+            "41": [
+              13
+            ],
+            "45": [
+              13
+            ],
+            "46": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "47": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "48": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "50": [
+              13
+            ],
+            "52": [
+              13
+            ],
+            "53": [
+              13
+            ],
+            "57": [
+              6,
+              9
+            ],
+            "59": [
+              6,
+              9
+            ],
+            "60": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "61": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "62": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "63": [
+              13
+            ],
+            "64": [
+              11,
+              13
+            ],
+            "65": [
+              11,
+              13
+            ],
+            "66": [
+              13
+            ],
+            "67": [
+              13
+            ],
+            "68": [
+              13
+            ],
+            "69": [
+              13
+            ],
+            "70": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "71": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "72": [
+              6,
+              9,
+              13
+            ]
+          },
+          "4": {
+            "4": [
+              13
+            ],
+            "7": [
+              6,
+              9
+            ],
+            "9": [
+              6,
+              9
+            ],
+            "10": [
+              6,
+              9,
+              13
+            ],
+            "11": [
+              6,
+              9,
+              13
+            ],
+            "12": [
+              6,
+              9,
+              11,
+              13
+            ],
+            "13": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "14": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "15": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "16": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "17": [
+              13
+            ],
+            "18": [
+              11,
+              13
+            ],
+            "19": [
+              11,
+              13
+            ],
+            "20": [
+              13
+            ],
+            "21": [
+              6,
+              9,
+              13
+            ],
+            "22": [
+              3,
+              6,
+              13
+            ],
+            "23": [
+              13
+            ],
+            "24": [
+              6,
+              9,
+              13
+            ],
+            "25": [
+              6,
+              9,
+              13
+            ],
+            "26": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "27": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "28": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "29": [
+              13
+            ],
+            "30": [
+              11,
+              13
+            ],
+            "31": [
+              11,
+              13
+            ],
+            "32": [
+              13
+            ],
+            "33": [
+              6,
+              9,
+              13
+            ],
+            "34": [
+              3,
+              6,
+              13
+            ],
+            "35": [
+              13
+            ],
+            "39": [
+              13
+            ],
+            "40": [
+              11,
+              13
+            ],
+            "41": [
+              13
+            ],
+            "45": [
+              6,
+              9,
+              13
+            ],
+            "46": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "47": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "48": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "50": [
+              13
+            ],
+            "52": [
+              13
+            ],
+            "53": [
+              13
+            ],
+            "57": [
+              6,
+              9
+            ],
+            "59": [
+              6,
+              9
+            ],
+            "60": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "61": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "62": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "63": [
+              13
+            ],
+            "64": [
+              11,
+              13
+            ],
+            "65": [
+              11,
+              13
+            ],
+            "66": [
+              13
+            ],
+            "67": [
+              6,
+              9,
+              13
+            ],
+            "68": [
+              3,
+              6,
+              13
+            ],
+            "69": [
+              13
+            ],
+            "70": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "71": [
+              3,
+              6,
+              11,
+              13
+            ],
+            "72": [
+              6,
+              9,
+              13
+            ]
+          },
+          "5": {
+            "21": [
+              13
+            ],
+            "22": [
+              3,
+              6,
+              13,
+              33
+            ],
+            "33": [
+              13
+            ],
+            "34": [
+              3,
+              6,
+              13,
+              33
+            ],
+            "39": [
+              13
+            ],
+            "40": [
+              11,
+              13
+            ],
+            "41": [
+              13
+            ],
+            "43": [
+              33
+            ],
+            "45": [
+              6,
+              9,
+              13
+            ],
+            "52": [
+              13
+            ],
+            "53": [
+              13
+            ],
+            "66": [
+              13
+            ],
+            "67": [
+              6,
+              9,
+              13,
+              33
+            ],
+            "68": [
+              3,
+              6,
+              13,
+              33
+            ]
+          },
+          "6": {
+            "39": [
+              13
+            ],
+            "40": [
+              11,
+              13
+            ],
+            "41": [
+              13
+            ]
+          }
+        },
+        "Tone_A": "",
+        "Tone_B": "",
+        "Tone_Base": "Bass",
+        "Tone_C": "",
+        "Tone_D": "",
+        "Tone_Multiplayer": "",
+        "Tones": [
+          {
+            "GearList": {
+              "Rack1": {
+                "Type": "Racks",
+                "KnobValues": {
+                  "Rack_StudioEQ_Bass": 11,
+                  "Rack_StudioEQ_BassFreq": 315,
+                  "Rack_StudioEQ_HiMid": 10.5,
+                  "Rack_StudioEQ_HiMidFreq": 0.900001,
+                  "Rack_StudioEQ_HiMidQ": 1,
+                  "Rack_StudioEQ_LoMid": -2,
+                  "Rack_StudioEQ_LoMidFreq": 520,
+                  "Rack_StudioEQ_LoMidQ": 0,
+                  "Rack_StudioEQ_Treble": -10,
+                  "Rack_StudioEQ_TrebleFreq": 12.599996
+                },
+                "Key": "Rack_StudioEQ"
+              },
+              "Amp": {
+                "Type": "Amps",
+                "KnobValues": {
+                  "": 7,
+                  "Bass_Amp_CS75B_Bass": 7.5,
+                  "Bass_Amp_CS75B_Gain": 12,
+                  "Bass_Amp_CS75B_Mid": -1,
+                  "Bass_Amp_CS75B_Treble": -1
+                },
+                "Key": "Bass_Amp_CS75B"
+              },
+              "Cabinet": {
+                "Type": "Cabinets",
+                "KnobValues": {},
+                "Key": "Bass_Cab_AT810BC_57_Cone"
+              },
+              "PrePedal1": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Bass_Pedal_MBComp_Compress": 75,
+                  "Bass_Pedal_MBComp_Filter": 600,
+                  "Bass_Pedal_MBComp_Rate": 40
+                },
+                "Key": "Bass_Pedal_MBComp"
+              },
+              "PrePedal2": {
+                "Type": "Pedals",
+                "KnobValues": {
+                  "Pedal_EQ8_100": 1,
+                  "Pedal_EQ8_1600": 4,
+                  "Pedal_EQ8_200": 1,
+                  "Pedal_EQ8_3200": 6,
+                  "Pedal_EQ8_400": 0,
+                  "Pedal_EQ8_50": 10,
+                  "Pedal_EQ8_6400": 0,
+                  "Pedal_EQ8_800": 2
+                },
+                "Key": "Pedal_EQ8"
+              }
+            },
+            "ToneDescriptors": [
+              "$[35715]BASS"
+            ],
+            "NameSeparator": " - ",
+            "IsCustom": true,
+            "Volume": "-15.000",
+            "Key": "Bass",
+            "Name": "Bass"
+          }
+        ],
+        "Tuning": {
+          "string0": 0,
+          "string1": 0,
+          "string2": 0,
+          "string3": 0,
+          "string4": 0,
+          "string5": 0
+        }
+      }
+    }
+  },
+  "ModelName": "RSEnumerable_Song",
+  "IterationVersion": 2,
+  "InsertRoot": "Static.Songs.Entries"
+}

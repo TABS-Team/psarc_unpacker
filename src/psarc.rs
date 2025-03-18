@@ -319,8 +319,10 @@ impl PsarcFile {
     }
 
     pub fn get_entry_by_path(&self, path: &str) -> Option<&PsarcTOCEntry> {
+        println!("Searching for entry with path: >>>{}<<<", path);
         self.toc.entries.iter().find(|entry| {
             if let Some(entry_path) = &entry.path {
+                println!("Comparing against: >>>{}<<<", entry_path);
                 entry_path == path
             } else {
                 false

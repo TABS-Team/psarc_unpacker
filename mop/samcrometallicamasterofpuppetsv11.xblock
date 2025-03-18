@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<game>
+  <entitySet>
+    <entity id="e3d1a6c386b24ad8850d3a857461ff9d" modelName="RSEnumerable_Song" name="SamcroMetallicaMasterOfPuppetsV11_Lead" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:samcrometallicamasterofpuppetsv11_lead" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:samcrometallicamasterofpuppetsv11_lead" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:samcrometallicamasterofpuppetsv11_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="65859f663496497e8f74b8b31166aed3" modelName="RSEnumerable_Song" name="SamcroMetallicaMasterOfPuppetsV11_Rhythm" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:samcrometallicamasterofpuppetsv11_rhythm" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:samcrometallicamasterofpuppetsv11_rhythm" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:samcrometallicamasterofpuppetsv11_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="d73336ad0a394868bcc1c3a9a88fc573" modelName="RSEnumerable_Song" name="SamcroMetallicaMasterOfPuppetsV11_Rhythm" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:samcrometallicamasterofpuppetsv11_rhythm2" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:samcrometallicamasterofpuppetsv11_rhythm2" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:samcrometallicamasterofpuppetsv11_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="e067e5cddda947a28f91c0223cc25e68" modelName="RSEnumerable_Song" name="SamcroMetallicaMasterOfPuppetsV11_Bass" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:samcrometallicamasterofpuppetsv11_bass" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:samcrometallicamasterofpuppetsv11_bass" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:samcrometallicamasterofpuppetsv11_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11_preview" />
+        </property>
+      </properties>
+    </entity>
+    <entity id="42bf521855ff4584a446077d8cc83555" modelName="RSEnumerable_Song" name="SamcroMetallicaMasterOfPuppetsV11_Vocals" iterations="0">
+      <properties>
+        <property name="Header">
+          <set value="urn:database:hsan-db:songs_dlc_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="Manifest">
+          <set value="urn:database:json-db:samcrometallicamasterofpuppetsv11_vocals" />
+        </property>
+        <property name="SngAsset">
+          <set value="urn:application:musicgame-song:samcrometallicamasterofpuppetsv11_vocals" />
+        </property>
+        <property name="AlbumArtSmall">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_64" />
+        </property>
+        <property name="AlbumArtMedium">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_128" />
+        </property>
+        <property name="AlbumArtLarge">
+          <set value="urn:image:dds:album_samcrometallicamasterofpuppetsv11_256" />
+        </property>
+        <property name="LyricArt">
+          <set value="" />
+        </property>
+        <property name="ShowLightsXMLAsset">
+          <set value="urn:application:xml:samcrometallicamasterofpuppetsv11_showlights" />
+        </property>
+        <property name="SoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11" />
+        </property>
+        <property name="PreviewSoundBank">
+          <set value="urn:audio:wwise-sound-bank:song_samcrometallicamasterofpuppetsv11_preview" />
+        </property>
+      </properties>
+    </entity>
+  </entitySet>
+</game>
