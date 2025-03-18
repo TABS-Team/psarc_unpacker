@@ -318,6 +318,16 @@ impl PsarcFile {
         Ok(PsarcFile { header, toc, data })
     }
 
+    pub fn get_entry_by_path(&self, path: &str) -> Option<&PsarcTOCEntry> {
+        self.toc.entries.iter().find(|entry| {
+            if let Some(entry_path) = &entry.path {
+                entry_path == path
+            } else {
+                false
+            }
+        })
+    }
+
     /// Inflates an entry into an asset of type T.
     /// This method creates a new cursor over the entire file data, then calls
     /// `inflate_entry_data` to perform block‑by‑block inflation of the specified entry.
