@@ -27,5 +27,6 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
         println!("Entry {} path: {:?}", i, entry.path);
     }
     psarc_file.dump_entries(output_folder)?;
+    psarc_file.convert_sng_assets_to_json(output_folder)?;
     Ok(())
 }

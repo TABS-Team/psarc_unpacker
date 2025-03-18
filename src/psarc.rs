@@ -4,8 +4,17 @@ use std::path::Path;
 use flate2::read::DeflateDecoder;
 use std::fs;
 use tracing;
+use serde_json;
+use serde::Serialize;
+
 
 use crate::decryptor::DecryptStream;
+use crate::models::{
+    Bpm, Phrase, Chord, ChordNotes, Vocal, SymbolsHeader, SymbolsTexture,
+    SymbolDefinition, PhraseIteration, PhraseExtraInfoByLevel, NLinkedDifficulty,
+    Action, Event, Tone, Dna, Section, Arrangement, Metadata, BinarySerializable,
+    read_vec, 
+};
 
 bitflags::bitflags! {
     pub struct PsarcArchiveFlags: u32 {
@@ -201,7 +210,7 @@ impl PsarcTOC {
 }
 
 pub trait PsarcAsset {
-    fn read_from<R: Read>(&mut self, reader: &mut R) -> io::Result<()>;
+    fn read_from<R: Read + Seek>(&mut self, reader: &mut R, length: usize) -> io::Result<()>;
 }
 
 #[derive(Default, Debug)]
@@ -217,12 +226,72 @@ pub struct SongArrangementAsset {
 }
 
 impl PsarcAsset for TextAsset {
-    fn read_from<R: Read>(&mut self, reader: &mut R) -> io::Result<()> {
+    fn read_from<R: Read + Seek>(&mut self, reader: &mut R, length: usize) -> io::Result<()> {
         let mut buf = Vec::new();
         reader.read_to_end(&mut buf)?;
         self.text = String::from_utf8(buf)
             .map_err(|e| io::Error::new(io::ErrorKind::Other, e))?;
         self.lines = self.text.lines().map(|s| s.to_string()).collect();
+        Ok(())
+    }
+}
+
+/// ----------------- SNG Asset -----------------
+/// This struct represents the overall SNG asset. In the C# code the decryption/decompression
+/// is done first and then the asset is read in order.
+#[derive(Default, Debug, Serialize)]
+pub struct SngAsset {
+    pub bpms: Vec<Bpm>,
+    pub phrases: Vec<Phrase>,
+    pub chords: Vec<Chord>,
+    pub chord_notes: Vec<ChordNotes>,
+    pub vocals: Vec<Vocal>,
+    pub symbol_headers: Option<Vec<SymbolsHeader>>,
+    pub symbol_textures: Option<Vec<SymbolsTexture>>,
+    pub symbol_definitions: Option<Vec<SymbolDefinition>>,
+    pub phrase_iterations: Vec<PhraseIteration>,
+    pub phrase_extra_info: Vec<PhraseExtraInfoByLevel>,
+    pub nld: Vec<NLinkedDifficulty>,
+    pub actions: Vec<Action>,
+    pub events: Vec<Event>,
+    pub tones: Vec<Tone>,
+    pub dnas: Vec<Dna>,
+    pub sections: Vec<Section>,
+    pub arrangements: Vec<Arrangement>,
+    pub metadata: Metadata,
+}
+
+/// For arrays that do not have a preceding count in the SNG file you might need to adjust
+/// the reading functions accordingly. Here we assume that each “array” is preceded by an i32 count.
+impl PsarcAsset for SngAsset {
+    fn read_from<R: Read + Seek>(&mut self, reader: &mut R, length: usize) -> io::Result<()> {
+        let mut decryptor = DecryptStream::new_sng(reader, length)?;
+        self.bpms = read_vec(&mut decryptor.reader, Bpm::read_from)?;
+        self.phrases = read_vec(&mut decryptor.reader, Phrase::read_from)?;
+        self.chords = read_vec(&mut decryptor.reader, Chord::read_from)?;
+        self.chord_notes = read_vec(&mut decryptor.reader, ChordNotes::read_from)?;
+        self.vocals = read_vec(&mut decryptor.reader, Vocal::read_from)?;
+        let (headers, textures, definitions) = if !self.vocals.is_empty() {
+            let headers = read_vec(&mut decryptor.reader, SymbolsHeader::read_from)?;
+            let textures = read_vec(&mut decryptor.reader, SymbolsTexture::read_from)?;
+            let definitions = read_vec(&mut decryptor.reader, SymbolDefinition::read_from)?;
+            (Some(headers), Some(textures), Some(definitions))
+        } else {
+            (None, None, None)
+        };
+        self.symbol_headers = headers;
+        self.symbol_textures = textures;
+        self.symbol_definitions = definitions;
+        self.phrase_iterations = read_vec(&mut decryptor.reader, PhraseIteration::read_from)?;
+        self.phrase_extra_info = read_vec(&mut decryptor.reader, PhraseExtraInfoByLevel::read_from)?;
+        self.nld = read_vec(&mut decryptor.reader, NLinkedDifficulty::read_from)?;
+        self.actions = read_vec(&mut decryptor.reader, Action::read_from)?;
+        self.events = read_vec(&mut decryptor.reader, Event::read_from)?;
+        self.tones = read_vec(&mut decryptor.reader, Tone::read_from)?;
+        self.dnas = read_vec(&mut decryptor.reader, Dna::read_from)?;
+        self.sections = read_vec(&mut decryptor.reader, Section::read_from)?;
+        self.arrangements = read_vec(&mut decryptor.reader, Arrangement::read_from)?;
+        self.metadata = Metadata::read_from(&mut decryptor.reader)?;
         Ok(())
     }
 }
@@ -256,7 +325,8 @@ impl PsarcFile {
         let inflated = self.inflate_entry_data(entry)?;
         let mut asset = T::default();
         let mut cursor = Cursor::new(inflated);
-        asset.read_from(&mut cursor)?;
+        let cursor_length = cursor.get_ref().len();
+        asset.read_from(&mut cursor, cursor_length)?;
         Ok(asset)
     }
 
@@ -327,7 +397,38 @@ impl PsarcFile {
         Ok(())
     }
 
-    pub fn dump_entries(&self, output_dir: &Path) -> io::Result<()> {
+    pub fn convert_sng_assets_to_json(&mut self, output_dir: &Path) -> io::Result<()> {
+        if self.toc.entries.is_empty() {
+            return Ok(());
+        }
+
+        for entry in &self.toc.entries {
+            if let Some(ref path) = entry.path {
+                if path.ends_with(".sng") {
+                    let asset: SngAsset = self.inflate_entry_as(entry)?;
+                    tracing::trace!(
+                        "Converted SNG asset from {} (metadata: {:?})",
+                        path,
+                        asset.metadata
+                    );
+                    let json = serde_json::to_string_pretty(&asset)
+                        .map_err(|e| io::Error::new(io::ErrorKind::Other, e))?;
+
+                    let file_name = Path::new(path)
+                        .file_name()
+                        .expect("Entry path should have a file name");
+                    let output_file_name = format!("{}.json", file_name.to_string_lossy());
+                    let output_file_path = output_dir.join(output_file_name);
+                    
+                    fs::write(&output_file_path, json)?;
+                    tracing::info!("Written JSON asset to {:?}", output_file_path);
+                }
+            }
+        }
+        Ok(())
+    }
+
+    pub fn dump_entries(&mut self, output_dir: &Path) -> io::Result<()> {
         fs::create_dir_all(output_dir)?;
         for entry in &self.toc.entries {
             if let Some(path) = &entry.path {
