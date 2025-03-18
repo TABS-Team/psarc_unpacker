@@ -1,5 +1,5 @@
 use std::io::{self, Read, Write, Seek, SeekFrom, Cursor};
-use byteorder::{BigEndian, ReadBytesExt};
+use byteorder::{BigEndian, LittleEndian, ReadBytesExt};
 use std::path::Path;
 use flate2::read::DeflateDecoder;
 use std::fs;
@@ -296,6 +296,69 @@ impl PsarcAsset for SngAsset {
     }
 }
 
+
+#[derive(Debug, Clone)]
+pub struct DIDX {
+    pub wem_id: u32,
+    pub offset: u32,
+    pub length: u32,
+}
+
+#[derive(Default, Debug, Clone)]
+pub struct BkhdAsset {
+    pub bkhd_length: u32,
+    pub bkhd_version: u32,
+    pub bkhd_id: u32,
+    pub didx_length: u32,
+    pub didx: Vec<DIDX>,
+    pub data_length: i32,
+}
+
+
+impl PsarcAsset for BkhdAsset {
+    fn read_from<R: Read + Seek>(&mut self, reader: &mut R, _length: usize) -> io::Result<()> {
+        let mut label_buf = [0u8; 4];
+        reader.read_exact(&mut label_buf)?;
+        let label = std::str::from_utf8(&label_buf)
+            .map_err(|_| io::Error::new(io::ErrorKind::InvalidData, "Invalid header label encoding"))?;
+        if label != "BKHD" {
+            return Err(io::Error::new(io::ErrorKind::InvalidData, "Not a valid bnk file"));
+        }
+
+        self.bkhd_length = reader.read_u32::<LittleEndian>()?;
+        self.bkhd_version = reader.read_u32::<LittleEndian>()?;
+        self.bkhd_id = reader.read_u32::<LittleEndian>()?;
+
+        let mut cur = self.bkhd_length.checked_sub(8)
+            .ok_or_else(|| io::Error::new(io::ErrorKind::InvalidData, "bkhd_length less than 8"))?;
+        while cur > 0 {
+            let _ = reader.read_i32::<LittleEndian>()?;
+            cur = cur.saturating_sub(4);
+        }
+        let mut didx_label_buf = [0u8; 4];
+        reader.read_exact(&mut didx_label_buf)?;
+        let didx_label = std::str::from_utf8(&didx_label_buf)
+            .map_err(|_| io::Error::new(io::ErrorKind::InvalidData, "Invalid DIDX label encoding"))?;
+        self.didx_length = reader.read_u32::<LittleEndian>()?;
+        let mut cur = self.didx_length;
+        let mut d_list = Vec::new();
+        while cur > 0 {
+            let wem_id = reader.read_u32::<LittleEndian>()?;
+            let offset = reader.read_u32::<LittleEndian>()?;
+            let length = reader.read_u32::<LittleEndian>()?;
+            d_list.push(DIDX { wem_id, offset, length });
+            cur = cur.saturating_sub(12);
+        }
+        self.didx = d_list;
+        let mut data_label_buf = [0u8; 4];
+        reader.read_exact(&mut data_label_buf)?;
+        let data_label = std::str::from_utf8(&data_label_buf)
+            .map_err(|_| io::Error::new(io::ErrorKind::InvalidData, "Invalid DATA label encoding"))?;
+        self.data_length = reader.read_i32::<LittleEndian>()?;
+
+        Ok(())
+    }
+}
 
 #[derive(Debug)]
 pub struct PsarcFile {
